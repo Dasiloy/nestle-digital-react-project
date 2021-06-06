@@ -648,8 +648,8 @@ nav {
   background-color: var(--clr-btn-hover);
 }
 
-@media screen and (min-width:576px){
-   .hero-img {
+@media screen and (min-width: 576px) {
+  .hero-img {
     width: 95%;
     height: 50vh;
     margin-top: 3rem;
@@ -754,14 +754,18 @@ nav {
 .clients {
   background-color: var(--cir-section-dark-bcg);
   padding: 30px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .clients-grid {
   align-items: center;
+  justify-content: center;
   display: grid;
   grid-gap: 40px;
   min-width: 60%;
-  padding: 0 50px;
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
@@ -772,14 +776,13 @@ nav {
   height: auto;
   object-fit: cover;
   margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (min-width: 768px) {
   .clients-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-  .clients-grid {
-    padding: 0 100px;
   }
 }
 
