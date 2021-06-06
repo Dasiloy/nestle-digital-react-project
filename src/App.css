@@ -648,6 +648,14 @@ nav {
   background-color: var(--clr-btn-hover);
 }
 
+@media screen and (min-width:576px){
+   .hero-img {
+    width: 95%;
+    height: 50vh;
+    margin-top: 3rem;
+  }
+}
+
 @media screen and (min-width: 768px) {
   #hero {
     min-height: 90vh;
