@@ -407,7 +407,7 @@ nav {
 
 .nav-menu-link #a {
   color: var(--cir-link-col);
-  font-size: 1rem;
+  font-size: 1.3rem;
   text-transform: capitalize;
   padding: 7px 0px;
   margin: 0 7px 15px 7px;
@@ -521,7 +521,7 @@ nav {
   .nav-menu-link #a {
     width: auto;
     color: var(--cir-text-white);
-    font-size: 0.94rem;
+    font-size: 1rem;
     transition: var(--transition);
     margin: 0 12px;
     display: flex;
