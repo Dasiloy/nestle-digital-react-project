@@ -14,8 +14,9 @@ body=======roboto
 paragraph====font-weight-400
 muted-text====font-weight-200
 
-
 #dependencies
 react-icons
 react-router
 react-items carousel https://github.com/kareemaly/react-items-carousel
+
+updates
