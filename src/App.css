@@ -319,11 +319,13 @@ nav {
 .nav-unscroll {
   padding: 8px 0;
   transition: var(--transition);
+  box-shadow: none;
 }
 
 .nav-scrolled {
   background-color: var(--cir-primary-3);
   padding: 4px 0;
+  box-shadow: var(--light-shadow);
 }
 
 .nav-header {
@@ -383,6 +385,8 @@ nav {
 
 .nav-body.show {
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .close-sidebar {
@@ -433,9 +437,10 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-top: 80px;
+  margin-top: auto;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 3rem;
 }
 
 .social-link {
@@ -609,6 +614,7 @@ nav {
   height: 40vh;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 2rem;
 }
 
 .hero-heading {
@@ -635,8 +641,8 @@ nav {
   display: block;
   margin-right: auto;
   margin-left: auto;
-  padding: 10px 20px;
-  margin-top: 30px;
+  padding: 15px 35px;
+  margin-top: 2.5rem;
 }
 
 .hero-btn:hover {
@@ -698,21 +704,27 @@ nav {
   }
 
   .hero-btn {
-    padding: 13px 45px;
+    padding: 16px 40px;
     margin-left: 0;
     margin-right: 0;
-    margin-top: 50px;
+    margin-top: 3rem;
   }
 }
 
 @media screen and (min-width: 1200px) {
   #hero {
-    min-height: 80vh;
+    min-height: 90vh;
   }
   .hero-img {
     height: 65vh;
     width: 40vw;
-    margin-top: 45px;
+    margin-top: 5rem;
+  }
+
+  .hero-desc {
+    margin-top: 3rem;
+    margin-bottom: 0;
+    margin-right: 50px;
   }
 
   #hero #hero .hero-section {
