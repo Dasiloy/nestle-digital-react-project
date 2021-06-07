@@ -1,5 +1,6 @@
 import React from "react";
 import { FaCheckDouble } from "react-icons/fa";
+import {Link} from 'react-router-dom'
 
 export const About = () => {
   return (
@@ -49,9 +50,9 @@ export const About = () => {
               culpa qui officia deserunt mollit anim id est
               laborum.
             </p>
-            <a href='#home' className='about-btn'>
+            <Link to='/' className='about-btn'>
               learn more
-            </a>
+            </Link>
           </article>
         </div>
       </div>

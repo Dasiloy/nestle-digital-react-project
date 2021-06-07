@@ -14,10 +14,12 @@ const getNavIndex = () => {
 const AppProvider = ({ children }) => {
   const [navIndex, setNavIndex] = useState(getNavIndex());
 
-  
-
   return (
-    <AppContext.Provider value={{ setNavIndex, navIndex }}>
+    <AppContext.Provider
+      value={{
+        setNavIndex,
+        navIndex,
+      }}>
       {children}
     </AppContext.Provider>
   );

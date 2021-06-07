@@ -1,4 +1,4 @@
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 import "./App.css";
 import { Navbar } from "./components/Navbar";
 import {
@@ -8,14 +8,16 @@ import {
 } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { Error } from "./pages/Error";
-import {UseGlobalContext} from './context/Context'
-
+import { UseGlobalContext } from "./context/Context";
 export default function App() {
   const { navIndex } = UseGlobalContext();
 
   useEffect(() => {
-    localStorage.setItem('navIndex',JSON.stringify(navIndex))
-  },[navIndex])
+    localStorage.setItem(
+      "navIndex",
+      JSON.stringify(navIndex)
+    );
+  }, [navIndex]);
   return (
     <>
       <Router>

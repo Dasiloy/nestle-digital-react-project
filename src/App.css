@@ -29,7 +29,7 @@
   --spacing: 0.1rem;
   --radius: 0.25rem;
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   --footer-submit-shadow: 0px 2px 15px rgba(0, 0, 0, 0.3);
   --cir-border-special: 1px solid #e0e5e2;
   --max-width: 1300px;
@@ -85,15 +85,21 @@ h2 {
 
 h3 {
   font-weight: 500;
-  font-size: 18px;
-  line-height: 25px;
+  font-size: 24px;
+  line-height: 30px;
 }
 
 h4,
 h5 {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 25px;
+}
+
+h6 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 @media screen and (min-width: 600px) {
@@ -103,54 +109,83 @@ h5 {
   }
 
   h2 {
-    font-size: 30px;
-    line-height: 38px;
+    font-size: 34px;
+    line-height: 40px;
   }
 
-  h3,
+  h3 {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
   h4,
   h5 {
     font-weight: 500;
+    font-size: 26px;
+    line-height: 32px;
+  }
+
+  h6 {
+    font-weight: 500;
     font-size: 20px;
-    line-height: 29px;
+    line-height: 26px;
   }
 }
 
 @media screen and (min-width: 992px) {
   h1 {
-    font-size: 50px;
-    line-height: 60px;
+    font-size: 46px;
+    line-height: 56px;
   }
 
   h2 {
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 38px;
+    line-height: 48px;
   }
 
-  h3,
+  h3 {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
   h4,
   h5 {
-    font-size: 23px;
-    line-height: 30px;
+    font-size: 26px;
+    line-height: 32px;
+  }
+  h6 {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 28px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   h1 {
-    font-size: 60px;
-    line-height: 70px;
+    font-size: 52px;
+    line-height: 62px;
   }
 
   h2 {
-    font-size: 50px;
-    line-height: 60px;
+    font-size: 49px;
+    line-height: 55px;
   }
 
-  h3,
+  h3 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
   h4,
   h5 {
-    font-size: 25px;
-    line-height: 33px;
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  h6 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
   }
 }
 
@@ -673,14 +708,6 @@ nav {
   background-color: var(--clr-btn-hover);
 }
 
-@media screen and (min-width: 576px) {
-  .hero-img {
-    width: 95%;
-    height: 50vh;
-    margin-top: 3rem;
-  }
-}
-
 @media screen and (min-width: 768px) {
   #hero {
     min-height: 90vh;
@@ -690,6 +717,7 @@ nav {
   .hero-btn {
     padding: 16px 40px;
     margin-top: 2.7rem;
+    font-size: 1.15rem;
   }
   .hero-img {
     width: 95%;
@@ -705,7 +733,7 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 40px 0;
+    padding: 10px 0;
   }
 
   #hero .hero-section {
@@ -750,6 +778,7 @@ nav {
     margin-left: 0;
     margin-right: 0;
     margin-top: 3rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -817,6 +846,10 @@ nav {
   }
   .clients img {
     margin-top: 0;
+  }
+  .hero-img {
+    width: 50vw;
+    height: 60vh;
   }
 }
 
@@ -909,6 +942,301 @@ nav {
     padding-bottom: 0.2rem;
   }
 }
+
+/*==============WHY-US===
+===============*/
+
+#why {
+  background-color: var(--cir-section-dark-bcg);
+  padding: 50px 0;
+}
+
+#why .second {
+  margin-top: 1rem;
+}
+
+#why .second .special-header {
+  color: var(--clr-primary-1);
+  margin-bottom: 10px;
+}
+
+#why .second .why-body {
+  padding: 10px 0;
+}
+
+#why .second .why-body .why-para {
+  margin-bottom: 30px;
+  font-size: 1.01rem;
+  line-height: 1.4rem;
+}
+
+#why .second .special-header .special-bold {
+  font-weight: bold;
+}
+
+#why .why-display {
+  padding: 4px 0;
+}
+
+.why-img {
+  display: block;
+  object-fit: cover;
+  width: 95%;
+  height: 40vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+}
+
+.why-display .display-item {
+  margin-bottom: 20px;
+  background-color: var(--clr-white);
+  padding: 18px 10px;
+  border-radius: 0.25rem;
+  box-shadow: var(--light-shadow);
+  transition: var(--transition);
+}
+
+#why .why-display .display-item:hover {
+  box-shadow: var(--dark-shadow);
+}
+
+.why-display .display-item header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--cir-primary-2);
+  font-size: 1.1rem;
+}
+
+.display-text {
+  margin-top: 20px;
+}
+
+.display-item .display-digit {
+  font-size: 1.3rem;
+  color: var(--cir-secondary-1);
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.why-display .display-item header .why-icons {
+  align-self: flex-start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  border-radius: 50%;
+  font-size: 0.75rem;
+  background-color: var(--cir-section-dark-bcg);
+}
+
+@media screen and (min-width: 768px) {
+  .display-item .display-digit {
+    font-size: 1.5rem;
+  }
+
+  .why-img {
+    width: 95%;
+    height: 35vh;
+  }
+
+  #why .second {
+    margin-top: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #why .why-grid {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #why .second {
+    max-width: 45vw;
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
+
+  .why-img {
+    height: auto;
+    width: 40vw;
+    margin-top: 4rem;
+    margin-right: 0;
+  }
+
+  #why .second .why-body .why-para {
+    margin-bottom: 30px;
+    font-size: 1.02rem;
+    line-height: 1.6rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .why-img {
+    height: auto;
+    width: 40vw;
+    margin-top: 5rem;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+  #why .second {
+    margin-right: 80px;
+  }
+}
+
+/*===========Skills=====
+=================*/
+
+#skills {
+  background-color: var(--cir-section-light-bcg);
+}
+
+.skills-img {
+  display: block;
+  object-fit: cover;
+  width: 95%;
+  height: 40vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+}
+
+#skills .second {
+  margin-top: 1rem;
+}
+
+#skills .second .special-header {
+  color: var(--clr-primary-1);
+  margin-bottom: 10px;
+}
+
+#skills .second .skills-body {
+  padding: 10px 0;
+}
+
+#skills .second .skills-body .skills-para {
+  margin-bottom: 30px;
+  font-size: 1.01rem;
+  line-height: 1.4rem;
+}
+
+#skills .second .special-header .special-bold {
+  font-weight: bold;
+}
+
+.single-skill {
+  margin: 30px 0;
+}
+
+.single-skill h6 {
+  display: flex;
+  min-height: auto;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.single-skill h6 :last-child {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+
+.single-skill .skill-bcg {
+  margin: 8px 0;
+  width: 100%;
+  height: 10px;
+  background-color: var(--cir-section-dark-bcg);
+}
+
+.skill-progress-100 {
+  background-color: var(--clr-primary-1);
+  width: 100%;
+  height: 100%;
+  border-radius: var(--cir-btn-radius);
+}
+
+.skill-progress-90 {
+  background-color: var(--clr-primary-1);
+  width: 90%;
+  height: 100%;
+  border-radius: var(--cir-btn-radius);
+}
+
+.skill-progress-80 {
+  background-color: var(--clr-primary-1);
+  width: 80%;
+  height: 100%;
+  border-radius: var(--cir-btn-radius);
+}
+
+.skill-progress-75 {
+  background-color: var(--clr-primary-1);
+  width: 75%;
+  height: 100%;
+  border-radius: var(--cir-btn-radius);
+}
+
+@media screen and (min-width: 768px) {
+  .skills-img {
+    width: 95%;
+    height: 35vh;
+  }
+
+  #skills .second {
+    margin-top: 2.5rem;
+  }
+
+  #skills .second .skills-body .skills-para {
+    margin-bottom: 30px;
+    font-size: 1.02rem;
+    line-height: 1.6rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #skills .skills-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .skills-img {
+    height: auto;
+    width: 40vw;
+    margin-top: 4rem;
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .skills-img {
+    height: auto;
+    width: 40vw;
+    margin-top: 5rem;
+    margin-right: 80px;
+    margin-bottom: 0;
+  }
+
+  #skills .second {
+    margin-right: 0;
+  }
+}
+
+/*==========SERVICE=====
+===================*/
+
+#service {
+  background-color: var(--cir-section-light-bcg);
+}
+
+#service .service-center {
+  display: flex;
+  justify-content: center;
+}
+
 /*=========FOOTER========
 ====================*/
 

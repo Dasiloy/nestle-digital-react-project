@@ -13,12 +13,12 @@ const Hero = () => {
           <h2 className='hero-heading'>
             Best solution for your business
           </h2>
-          <h3 className='hero-para'>
+          <h5 className='hero-para'>
             Lorem ipsum dolor sit amet consectetur,
             adipisicing elit. Harum molestiae obcaecati
             aperiam eos esse provident ullam necessitatibus
             corrupti sapiente similique
-          </h3>
+          </h5>
           <button type='button' className='btn hero-btn'>
             Get Started
           </button>
