@@ -29,7 +29,7 @@ export const Skills = () => {
             <div className='skills-list'>
               <div className='single-skill'>
                 <h6>
-                  <span>HTML</span>
+                  <span>SALES</span>
                   <span>100%</span>
                 </h6>
                 <article className='skill-bcg'>
@@ -38,7 +38,7 @@ export const Skills = () => {
               </div>
               <div className='single-skill'>
                 <h6>
-                  <span>CSS</span>
+                  <span>PRODUCT AWARENESS</span>
                   <span>90%</span>
                 </h6>
                 <article className='skill-bcg'>
@@ -47,7 +47,7 @@ export const Skills = () => {
               </div>
               <div className='single-skill'>
                 <h6>
-                  <span>JAVASCRIPT</span>
+                  <span>DIGITAL MARKETTING</span>
                   <span>80%</span>
                 </h6>
                 <article className='skill-bcg'>
@@ -56,7 +56,7 @@ export const Skills = () => {
               </div>
               <div className='single-skill'>
                 <h6>
-                  <span>REACT</span>
+                  <span>AFFILATE MARKETING</span>
                   <span>75%</span>
                 </h6>
                 <article className='skill-bcg'>

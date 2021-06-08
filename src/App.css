@@ -34,6 +34,8 @@
   --cir-border-special: 1px solid #e0e5e2;
   --max-width: 1300px;
   --fixed-width: 450px;
+  --card-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+  --card-radius: 0.25rem;
 }
 
 /*===GLOBAL STYLE=====
@@ -1114,7 +1116,7 @@ nav {
 }
 
 #skills .second .skills-body {
-  padding: 10px 0;
+  padding: 10px 0 0 0;
 }
 
 #skills .second .skills-body .skills-para {
@@ -1225,16 +1227,105 @@ nav {
   }
 }
 
-/*==========SERVICE=====
-===================*/
+/*========SERVICE============
+=================*/
 
 #service {
-  background-color: var(--cir-section-light-bcg);
+  background-color: var(--cir-section-dark-bcg);
 }
 
-#service .service-center {
-  display: flex;
-  justify-content: center;
+#service .service-body {
+  padding: 0;
+  text-align: left;
+}
+
+#service .service-body .service-para {
+  margin-bottom: 30px;
+  font-size: 1.01rem;
+  line-height: 1.4rem;
+}
+
+.service-item {
+  box-shadow: var(--card-shadow);
+  margin-bottom: 1rem;
+  padding: 50px 30px;
+  text-align: left;
+  border-radius: var(--card-radius);
+  transition: var(--transition);
+  background-color: var(--cir-text-white);
+}
+
+.service-item h3 {
+  margin-bottom: 15px;
+  color: var(--cir-secondary-1);
+  transition: var(--transition);
+  font-size: 42px;
+}
+
+.service-item h4 {
+  margin-bottom: 20px;
+  color: var(--clr-primary-1);
+  transition: var(--transition);
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.service-item p {
+  font-size: 14.9px !important;
+  line-height: 24px;
+  margin-bottom: 0;
+  transition: var(--transition);
+}
+
+.service-item:hover {
+  box-shadow: var(--dark-shadow);
+  transform: translateY(-10px);
+  background-color: var(--cir-secondary-2);
+}
+
+.service-item:hover h4 {
+  color: var(--clr-white);
+}
+
+.service-item:hover h3 {
+  color: var(--clr-white);
+}
+
+.service-item:hover p {
+  color: var(--clr-white);
+}
+
+@media screen and (min-width: 768px) {
+  #service .service-body .service-para {
+    margin-bottom: 30px;
+    font-size: 1.02rem;
+    line-height: 1.6rem;
+  }
+
+  .service-items {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    overflow: hidden;
+    grid-gap: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+}
+
+@media screen and (min-width: 1200px) {
+  .service-items {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    overflow: hidden;
+    grid-gap: 2rem;
+  }
+  .service-item h3 {
+    margin-bottom: 10px;
+  }
+  .service-item h4 {
+    margin-bottom: 15px;
+  }
 }
 
 /*=========FOOTER========
