@@ -47,7 +47,7 @@ export const Skills = () => {
               </div>
               <div className='single-skill'>
                 <h6>
-                  <span>DIGITAL MARKETTING</span>
+                  <span>DIGITAL MARKETING</span>
                   <span>80%</span>
                 </h6>
                 <article className='skill-bcg'>

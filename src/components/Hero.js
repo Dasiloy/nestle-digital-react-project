@@ -19,7 +19,7 @@ const Hero = () => {
             aperiam eos esse provident ullam necessitatibus
             corrupti sapiente similique
           </h5>
-          <button type='button' className='btn hero-btn'>
+          <button type='button' className='hero-btn'>
             Get Started
           </button>
         </div>

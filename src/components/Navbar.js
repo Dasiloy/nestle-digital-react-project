@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { links, social } from "../Data/Navdata";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { UseGlobalContext } from "../context/Context";
-import {Link} from 'react-router-dom'
 
 export const Navbar = () => {
   const [link, setLink] = useState([]);
@@ -20,9 +19,9 @@ export const Navbar = () => {
   };
 
   const handleMenuLinks = (id) => {
-    setNavIndex(id)
+    setNavIndex(id);
     setShowSidebar(false);
-  }
+  };
 
   useEffect(() => {
     window.addEventListener("scroll", checkScrolled);
@@ -68,19 +67,20 @@ export const Navbar = () => {
               const { id, url, text, icon } = menu;
               return (
                 <li className='nav-menu-link' key={id}>
-                  <Link to={url}
+                  <a
+                    href={`${url}`}
                     id='a'
-                      className={`${
-                        navIndex === id
-                          ? "nav-active"
-                          : "nav-unactive"
-                      }`}
-                      onClick={() => handleMenuLinks(id)}>
-                      <span className='nav-menu-icon'>
-                        {icon}
-                      </span>
-                      {text}
-                  </Link>
+                    className={`${
+                      navIndex === id
+                        ? "nav-unactive"
+                        : "nav-unactive"
+                    }`}
+                    onClick={() => handleMenuLinks(id)}>
+                    <span className='nav-menu-icon'>
+                      {icon}
+                    </span>
+                    {text}
+                  </a>
                 </li>
               );
             })}
