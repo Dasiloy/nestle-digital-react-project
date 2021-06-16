@@ -9,7 +9,7 @@ import { Service } from "../components/Service";
 import { Action } from "../components/Action";
 import { Portfolio } from "../components/Portfolio";
 import { Team } from "../components/Team";
-import { Contact } from "../components/Contact";
+import  Contact  from "../components/Contact";
 import { FandQ } from "../components/FandQ";
 import Footer from "../components/Footer";
 import { BackToTop } from "../components/BackToTop";
